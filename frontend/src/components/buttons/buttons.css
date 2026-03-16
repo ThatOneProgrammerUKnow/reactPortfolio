@@ -1,0 +1,48 @@
+button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  min-height: fit-content;
+
+  width: fit-content;
+  
+  
+  cursor: pointer;
+  
+  
+}
+button:focus,
+button:focus-visible {
+  outline: 0;
+}
+
+/* |=============================================| Themes |=============================================|*/
+.btnPrimary{
+  color: var(--light);
+  background-color: var(--blue-3);
+  border: none;
+}
+.btnPrimary:hover{
+  background-color: var(--blue-4);
+}
+
+/* |=============================================| Media queries |=============================================|*/
+/* Medium */
+@media only screen and (max-width: 992px) {
+    button{
+      font-size: 1.3em;
+      height: 50px;
+    }
+    .fixed{
+      width: 150px;
+    }
+}
+
+/* Large */
+@media only screen and (min-width: 992px) {
+  button{
+    font-size: 1.5rem;
+    height: 70px;
+    width: 180px;
+  }
+}
+

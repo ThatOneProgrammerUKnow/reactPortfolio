@@ -1,0 +1,46 @@
+form{
+    margin: 5rem auto;
+    background-color: #CCD5AE;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #2F3226;
+}
+
+form h2{
+    font-size: 3rem;
+}
+form h3{
+    font-family: "Google Sans Code", monospace;
+    font-weight: 400;
+    font-size: 2rem; 
+}
+
+form label{
+    font-family: "Google Sans Code", monospace;
+}
+form input{
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 100%;
+    color: #2F3226;
+
+    background-color: #e9edc9;
+}
+form input:focus, form input:active{
+    outline: none;
+    border: none;
+    background: #faffd7;
+    }
+
+
+.reset-styles {
+  all: revert;
+}

@@ -1,0 +1,80 @@
+:root{
+    --animationTime: 120s;
+}
+.image{
+    border-radius: 1rem;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.sliderWrapper{
+    display: flex;
+    flex-grow: 1;
+    max-width: 100vw;
+}
+.slider{
+    display: flex;
+    background-color: transparent;
+}
+
+.slider img{
+    margin: 5px 20px;
+    border: 10px solid var(--blue-3);
+}
+
+
+
+
+/* |========================================| Phones |========================================| */
+@media screen and (max-width: 480px){
+.slide{ display: none; }
+
+.slider{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: fit-content;  
+}
+.slider::-webkit-scrollbar{ display: none; }
+
+.imageContainer{
+    scroll-snap-align: center;
+    flex: 0 0 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    max-width: calc(100vw - 80px);
+    height: 400px;
+}}
+
+
+
+
+/* |========================================| Tablets and up |========================================| */
+@media screen and (min-width: 480px){
+.slide{ display: flex; }
+.sliderWrapper{
+    overflow-x: auto;
+}
+.sliderWrapper::-webkit-scrollbar{
+    justify-content: flex-start;
+}
+
+.slider{ 
+    flex: 0 0 100%;
+    animation: slide var(--animationTime) infinite linear;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    max-height: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+@keyframes slide {
+    from {translate: 0; }
+    to {translate: -100%; } 
+} 
+}
