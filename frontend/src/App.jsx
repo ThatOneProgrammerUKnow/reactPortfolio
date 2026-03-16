@@ -19,7 +19,7 @@ function App() {
         <nav>
             <Button onClick={handleOpenModal} text="About me" btnSizing="fixed"/>
         </nav>
-        <ImageSlider totalImages={17} imageExtension={"jpg"}/>
+        <ImageSlider totalImages={16} imageExtension={"jpg"}/>
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
           <h1>
             Kobus van Schalkwyk
